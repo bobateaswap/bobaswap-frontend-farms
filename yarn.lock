@@ -1169,17 +1169,6 @@
     "@web3-react/walletlink-connector" "^6.1.1"
     jsbi "^3.1.1"
 
-"@bobaswap-libs/uikit@^0.10.2":
-  version "0.10.2"
-  resolved "https://registry.yarnpkg.com/@bobaswap-libs/uikit/-/uikit-0.10.2.tgz#ef8f48d251e3cd22a651fe8249b8e704344c51f1"
-  integrity sha512-cw32L9g9nH+W2ihpDcdQmayeTfzueazTVC6ywVWhKbK3xClRXeDMje967j3onSPMJmCh8tF02u8NKJ8A6turow==
-  dependencies:
-    "@types/lodash" "^4.14.162"
-    "@types/styled-system" "^5.1.10"
-    lodash "^4.17.20"
-    react-transition-group "^4.4.1"
-    styled-system "^5.1.5"
-
 "@chaitanyapotti/random-id@^1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@chaitanyapotti/random-id/-/random-id-1.0.3.tgz#f52f647cfe9f79fc7723ea2b01b0ad3889204002"
@@ -1838,6 +1827,16 @@
     eslint-plugin-jsx-a11y "^6.4.1"
     eslint-plugin-react "^7.21.5"
     eslint-plugin-react-hooks "^4.0.0"
+
+"@pancakeswap-libs/uikit@bobateaswap/bobaswap-uikit":
+  version "0.10.2"
+  resolved "https://codeload.github.com/bobateaswap/bobaswap-uikit/tar.gz/2f6d361171bbdb2d24b88cfd025d08023651e13d"
+  dependencies:
+    "@types/lodash" "^4.14.162"
+    "@types/styled-system" "^5.1.10"
+    lodash "^4.17.20"
+    react-transition-group "^4.4.1"
+    styled-system "^5.1.5"
 
 "@pedrouid/iso-crypto@^1.0.0":
   version "1.0.0"
