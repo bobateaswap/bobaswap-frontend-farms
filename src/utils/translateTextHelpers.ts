@@ -4,10 +4,14 @@ import { TranslationsContext } from '../contexts/Localisation/translationsContex
 const variableRegex = /%(.*?)%/
 
 const replaceDynamicString = (foundTranslation: string, fallback: string) => {
-  const stringToReplace = variableRegex.exec(foundTranslation)[0]
-  // const indexToReplace = foundTranslation.split(' ').indexOf(stringToReplace)
-  const fallbackValueAtIndex = fallback.split(' ')[0]
-  return foundTranslation.replace(stringToReplace, fallbackValueAtIndex)
+  const regExpExecArray = variableRegex.exec(foundTranslation)
+  if (regExpExecArray) {
+    const stringToReplace = regExpExecArray[0]
+    // const indexToReplace = foundTranslation.split(' ').indexOf(stringToReplace)
+    const fallbackValueAtIndex = fallback.split(' ')[0]
+    return foundTranslation.replace(stringToReplace, fallbackValueAtIndex)
+  } 
+  return foundTranslation
 }
 
 export const getTranslation = (translations: Array<any>, translationId: number, fallback: string) => {

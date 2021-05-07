@@ -21,12 +21,12 @@ const config: MenuEntry[] = [
     ],
   },
   {
-    label: 'Farms',
+    label: 'Boba Factories',
     icon: 'FarmIcon',
     href: '/farms',
   },
   {
-    label: 'Nests',
+    label: 'Tea Bags',
     icon: 'PoolIcon',
     href: '/nests',
   },
@@ -45,28 +45,28 @@ const config: MenuEntry[] = [
   //   icon: 'NftIcon',
   //   href: '/nft',
   // },
-  {
-    label: 'Info',
-    icon: 'InfoIcon',
-    items: [
-      {
-        label: 'PancakeSwap',
-        href: 'https://pancakeswap.info/token/0x5068339C71Dbf01ECEbA53f143C1Fd763E178dF0',
-      },
-      {
-        label: 'CoinGecko',
-        href: 'https://www.coingecko.com/en/coins/goose-finance',
-      },
-      {
-        label: 'CoinMarketCap',
-        href: 'https://coinmarketcap.com/currencies/goose-finance/',
-      },
-      {
-        label: 'AstroTools',
-        href: 'https://app.astrotools.io/pancake-pair-explorer/0x469cd8507B4598cfE15f36C3929E31c0C19c7432',
-      },
-    ],
-  },
+  // {
+  //   label: 'Info',
+  //   icon: 'InfoIcon',
+  //   items: [
+  //     {
+  //       label: 'PancakeSwap',
+  //       href: 'https://pancakeswap.info/token/0x5068339C71Dbf01ECEbA53f143C1Fd763E178dF0',
+  //     },
+  //     {
+  //       label: 'CoinGecko',
+  //       href: 'https://www.coingecko.com/en/coins/goose-finance',
+  //     },
+  //     {
+  //       label: 'CoinMarketCap',
+  //       href: 'https://coinmarketcap.com/currencies/goose-finance/',
+  //     },
+  //     {
+  //       label: 'AstroTools',
+  //       href: 'https://app.astrotools.io/pancake-pair-explorer/0x469cd8507B4598cfE15f36C3929E31c0C19c7432',
+  //     },
+  //   ],
+  // },
   {
     label: 'More',
     icon: 'MoreIcon',
@@ -88,7 +88,7 @@ const config: MenuEntry[] = [
   {
     label: 'Partnerships/IFO',
     icon: 'GooseIcon',
-    href: 'https://docs.google.com/forms/d/e/1FAIpQLSe7ycrw8Dq4C5Vjc9WNlRtTxEhFDB1Ny6jlAByZ2Y6qBo7SKg/viewform?usp=sf_link',
+    href: 'https://docs.google.com/forms/d/e/1FAIpQLScVGS6HpKniXNupk40mSH4Crdi-WJJScDjBKwzZUksUZekYyQ/viewform?vc=0&c=0&w=1&flr=0&gxids=7628',
   },
   // {
   //   label: 'Audit by Hacken',
