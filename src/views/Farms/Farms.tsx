@@ -13,9 +13,11 @@ import useRefresh from 'hooks/useRefresh'
 import { fetchFarmUserDataAsync } from 'state/actions'
 import { QuoteToken } from 'config/constants/types'
 import useI18n from 'hooks/useI18n'
+import { getBalanceNumber } from 'utils/formatBalance'
 import FarmCard, { FarmWithStakedValue } from './components/FarmCard/FarmCard'
 import FarmTabButtons from './components/FarmTabButtons'
 import Divider from './components/Divider'
+
 
 export interface FarmsProps{
   tokenMode?: boolean
@@ -58,7 +60,7 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
         //   return farm
         // }
         
-        const cakeRewardPerBlock = new BigNumber(farm.bobaPerBlock || 1).times(new BigNumber(farm.poolWeight)) .div(new BigNumber(10).pow(18))
+        const cakeRewardPerBlock = new BigNumber(farm.bobaPerBlock || 1).times(new BigNumber(farm.poolWeight)) .div(new BigNumber(10).pow(18)).div(4)
         const cakeRewardPerYear = cakeRewardPerBlock.times(BLOCKS_PER_YEAR)
         let apy = cakePrice.times(cakeRewardPerYear);
         let totalValue = new BigNumber(farm.lpTotalInQuoteToken || 0);
